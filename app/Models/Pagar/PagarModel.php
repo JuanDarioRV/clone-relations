@@ -5,6 +5,9 @@ namespace App\Models\Pagar;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+use App\Models\Comprador\CompradorModel;
+use App\Models\Producto\ProductoModel;
+
 class PagarModel extends Model
 {
     use HasFactory;
