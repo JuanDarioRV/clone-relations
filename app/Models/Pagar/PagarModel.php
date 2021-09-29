@@ -15,5 +15,12 @@ class PagarModel extends Model
         'producto_id'
     ];
 
-    // Agrear modelos a relacionar 
+    // Agrear modelos a relacionar
+    public function compradores(){
+        return $this->belongsTo(CompradorModel::class);
+    }
+
+    public function productos(){
+        return $this->belongsTo(ProductoModel::class);
+    }
 }
